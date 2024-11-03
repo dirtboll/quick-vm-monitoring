@@ -12,3 +12,8 @@ scrape_configs:
     scrape_interval: 1m
     static_configs:
       - targets: ['node-exporter:9100']
+
+  - job_name: 'process'
+    scrape_interval: 1m
+    static_configs:
+      - targets: ['process-exporter:9256']
